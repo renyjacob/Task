@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(161, 141, 207);
+}
+.container{
+    position: relative;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    background-color: white;
+}
+.container header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+}
+.container header ::before{
+    content: "";
+    position: absolute;
+    left:0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+}
+.container form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+}
+.container form .details{
+    margin-top: 30px;
+}
+.container form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    margin:6px 0;
+    background-color: darkblue;
+    color: white;
+    height: 50px;
+    padding: 15px;
+}
+.container form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    /* width:calc(100%/3 -15px); */
+    flex-direction: column;
+    margin: 4px 0;
+}
+form .fields .input-field label{
+    font-size: 12px;
+    font-weight: 500;
+}
+form .fields .input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.container form .fields-one{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields-one .input-field{
+    display: flex;
+    /* width:calc(100%/6 -15px); */
+    flex-direction: column;
+    margin: 4px 0;
+}
+form .fields-one .input-field label{
+    font-size: 12px;
+    font-weight: 500;
+}
+form .fields-one .input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.container form .fields-two{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields-two .input-field{
+    display: flex;
+    /* width:calc(100%/5 -15px); */
+    flex-direction: column;
+    margin: 4px 0;
+}
+form .fields-two .input-field label{
+    font-size: 12px;
+    font-weight: 500;
+}
+form .fields-two .input-field input{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color:#333;
+}
+.note{  
+    height: 50px;
+    background-color: rgb(235, 152, 152);
+    border-radius: 10px;
+    max-width: 96%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 25px ;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
+    text-align: center;
+}
+.btn{
+    margin-left:80%;
+    background-color: darkblue;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 10px;
+}
+.first-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color:white;
+    border-radius: 10px;
+    max-width: 96%;
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 30px ;
+    margin-top: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
+}
+.first-div button{
+    background-color: darkblue;
+    border-radius: 50px;
+    width:30px;
+    height:30px;
+    /* margin-left: 35px; */
+}
